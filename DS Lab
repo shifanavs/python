@@ -1,0 +1,83 @@
+DSTA STRUCTURE
+a data structure is a Specific way to store and organize data in a computer's memory so that these data can be used efficiently later. Data may be arranged in many different ways, such as the logical or mathematical model for a particular organization of data is termed as a data structure. The variety of a specific data model depends on the two factors - 
+    Firstly, it must be loaded enough in structure to reflect the actual relationships of the data with the real-world object.
+    Secondly, the formation should be simple enough so that anyone can efficiently process the data each time it is necessary.
+
+The data structure can be subdivided into major types:
+
+    LINEAR DATA STRUCTURE
+    Non-linear Data Structure
+linear data structure
+A data structure is said to be linear if its elements combine to form any specific order. There are two techniques of representing such linear structure within memory.
+
+    The first way is to provide the linear relationships among all the elements represented using linear memory location. These linear structures are termed as arrays.
+    The second technique is to provide a linear relationship among all the elements represented by using the concept of pointers or links. These linear structures are termed as linked lists.
+The common examples of the linear data structure are: 
+    Arrays
+    Queues
+    Stacks
+    Linked lists
+
+This structure is mostly used for representing data that contains a hierarchical relationship among various elements.
+
+Examples of Non-Linear Data Structures are listed below:
+
+    Graphs
+    the family of trees and
+    table of contents
+
+Tree: In this case, data often contain a hierarchical relationship among various elements. The data structure that reflects this relationship is termed as a rooted tree graph or a tree.
+
+Graph: In this case, data sometimes hold a relationship between the pairs of elements, which is not necessarily following the hierarchical structure. Such a data structure is termed as a Graph.
+     
+
+List of data structure in a linear type of data structure
+1. Array
+
+The array is that type of structure that stores homogeneous elements at memory locations which are contiguous. The same types of objects are stored sequentially in an array. The main idea of an array is that multiple data of the same type can be stored together. Before storing the data in an array, the size of the array has to be defined. Any element in the array can be accessed or modified and the elements stored are indexed to identify their locations.
+
+An array can be explained with the help of a simple example of storing the marks for all the students in a class. Suppose there are 20 students, then the size of the array has to be mentioned as 20. Marks of all the students can then be stored in the created array without the need for creating separate variables for marks for every student. Simple traversal of the array can lead to the access of the elements.
+2. Linked list
+
+The linked list is that type of data structure where separate objects are stored sequentially. Every object stored in the data structure will have the data and a reference to the next object. The last node of the linked list has a reference to null. The first element of the linked list is known as the head of the list. There are many differences between a linked list to the other types of data structures. These are in terms of memory allocation, the internal structure of the data structure, and the operations carried on the linked list. 
+
+Getting to an element in a linked list is a slower process compared to the arrays as the indexing in an array helps in locating the element. However, in the case of a linked list, the process has to start from the head and traverse through the whole structure until the desired element is reached. In contrast to this, the advantage of using linked lists is that the addition or deletion of elements at the beginning can be done very quickly. 
+
+There are three types of linked lists:
+
+    Single Linked List: This type of structure has the address or the reference of the next node stored in the current node. Therefore, a node which at the last has the address and reference as a NULL. Example: A->B->C->D->E->NULL.
+    A Double Linked List: As the name suggests, each node has two references associated with it. One reference directs to the previous node while the second reference points to the next node. Traversal is possible in both directions as reference is available for the previous nodes. Also, explicit access is not required for deletion. Example: NULL<-A<->B<->C<->D<->E->NULL.
+    Linked List which is circular: The nodes in a circular linked list are connected in a way that a circle is formed. As the linked list is circular there is no end and hence no NULL. This type of linked list can follow the structure of both singly or doubly. There is no specific starting node and any node from the data can be the starting node. The reference of the last node points towards the first node. Example: A->B->C->D->E.
+
+Properties of a linked list are:
+
+        Access time: O(n)
+        Searching time: O(n)
+        Adding element: O(1) 
+    Deleting  an Element : O(1) 
+
+3. Stack
+
+The stack is another type of structure where the elements stored in the data structure follow the rule of LIFO (last in, first out) or FILO (First In Last Out). Two types of operations are associated with a stack i.e. push and pop. Push is used when an element has to be added to the collection and pop is used when the last element has to be removed from the collection. Extraction can be carried out for only the last added element.
+
+Properties of a stack are:
+
+    Adding element: O(1)
+    deleting element:  O(1)
+    Accessing Time: O(n) [Worst Case]
+    Only one end allows inserting and deleting an element.
+
+Examples of the stack include the removal of recursion. In scenarios where a word has to be reversed, or while using editors when the word that was last typed will be removed first (using an undo operation), stacks are used. If you want to try interesting data structure projects, click to read this article.
+4. Queue
+
+Queue is the type of data structure where the elements to be stored follow the rule of First In First Out (FIFO). The particular order is followed for performing the required operations over the elements. The difference of a queue from that of a stack lies in the removal of an element, where the most recently added object is removed first in a stack. Whereas, in the case of a queue, the element that was added first is removed first.
+
+Both the end of the data structure is used for the insertion and the removal of data. The two main operations governing the structure of the queue are enqueue, and dequeue. Enqueue refers to the process where inserting an element is allowed to the collection of data and dequeue refers to the process where removal of elements is allowed, which is the first element in the queue in this case.
+
+Properties of a queue are:
+
+    Inserting an element: O(1)
+    Deleting an element: O(1)
+    Accessing Time: O(n)
+
+Example of the queue: Similar to those queues made while waiting for the bus or anywhere, the data structure too follows the same pattern. We can imagine a person waiting for the bus and standing at the first position as the person that came to the queue first. This person will be the first one who will get onto a bus, i.e. exit the queue. Queues are applied when multiple users are sharing the same resources and they have to be served on the basis of who has come first on the server. 
